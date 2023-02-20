@@ -34,7 +34,7 @@ body {
   background: none;
 }
 
-.header div {
+.header nav {
   /* targets the div inside of header section and sets the top padding and right margin */
   padding-top: 15px;
   margin-right: 20px;
@@ -43,9 +43,6 @@ body {
   /* sets font-family and font size of navigation menu */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
-}
-
-.header div nav {
   /* overwrites the default list style (bullet point) and sets it to none */
   list-style-type: none;
 }
