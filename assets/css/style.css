@@ -1,204 +1,205 @@
 * {
+  /* Basic CSS reset */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
+  /* sets background color */
   background-color: #d9dcd6;
 }
-
+/* sets */
 .header {
+  /* sets padding for header */
   padding: 20px;
+  /* sets font-family for header section */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: #2a607c;
+  /* uses hex codes to define color */
   color: #ffffff;
 }
 
 .header h1 {
+  /* uses inline-block to align h1 and navigation menu in one line */
   display: inline-block;
+  /* sets font-size of h1 */
   font-size: 48px;
 }
 
 .header h1 .seo {
+  /* targets the "seo" class and sets its color and background */
   color: #d9dcd6;
   background: none;
 }
 
 .header div {
+  /* targets the div inside of header section and sets the top padding and right margin */
   padding-top: 15px;
   margin-right: 20px;
+  /* puts the navigation menu to the right side of the page */
   float: right;
+  /* sets font-family and font size of navigation menu */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
 
 .header div nav {
+  /* overwrites the default list style (bullet point) and sets it to none */
   list-style-type: none;
 }
 
 .header nav li {
+  /* displays the menu items as a block aligned next to each other*/
   display: inline-block;
+  /* uses left margin for each <li> element*/
   margin-left: 25px;
 }
 
 a {
+  /* sets the hex color code */
   color: #ffffff;
+  /* overwrites the default underlined text to text without underline */
   text-decoration: none;
 }
 
 p {
+  /* sets the font size of all paragraph elements */
   font-size: 16px;
 }
 
 .hero {
+  /* sets the height and width of the element */
   height: 800px;
   width: 100%;
+  /* sets bottom margin */
   margin-bottom: 25px;
+  /* puts a background image for the element */
   background-image: url("../images/digital-marketing-meeting.jpg");
+  /* sets the background image so that it covers the whole dimension */
   background-size: cover;
+  /* aligns the background to the center of the element */
   background-position: center;
+  /* makes the element block generating line breaks both before and after the element */
   display: block;
 }
 
 .float-left {
+  /* sets the element on the left side of its containing block */
   float: left;
+  /* sets right margin */
   margin-right: 25px;
 }
 
 .float-right {
+  /* sets the element on the right side of its containing block */
   float: right;
+  /* sets left margin */
   margin-left: 25px;
 }
 
 .content {
+  /* puts a percentage value for the width of the element*/
   width: 75%;
+  /* puts the element on the same line as the next element */
   display: inline-block;
+  /* sets left margin */
   margin-left: 20px;
 }
 
 .benefits {
+  /* sets right margin */
   margin-right: 20px;
+  /* sets same padding from all 4 directions */
   padding: 20px;
+  /* clears left & right floats */
   clear: both;
+  /* sets the element on the right side of its containing block */
   float: right;
+  /* sets width and height of the element */
   width: 20%;
   height: 100%;
+  /* sets font-family */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* sets hex color code as a background */
   background-color: #2589bd;
 }
 
-.benefit-lead {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-brand {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
+.benefit-lead,
+.benefit-brand,
 .benefit-cost {
+  /* sets bottom margin */
   margin-bottom: 32px;
+  /* sets hex color code as font color */
   color: #ffffff;
 }
 
-.benefit-lead h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
+.benefit-lead h3,
+.benefit-brand h3,
 .benefit-cost h3 {
+  /* sets bottom margin */
   margin-bottom: 10px;
+  /* aligns the text to the center of the element */
   text-align: center;
 }
 
-.benefit-lead img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
+.benefit-lead img,
+.benefit-brand img,
 .benefit-cost img {
+  /* makes the element block generating line breaks both before and after the element */
   display: block;
+  /* sets top and bottom margin to 10px and left and right margin to auto so that elements displays at the center of the section */
   margin: 10px auto;
+  /* sets the max-width so that image is always contained in the section */
   max-width: 150px;
 }
 
-#search-engine-optimization {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-#online-reputation-management {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
+#search-engine-optimization,
+#online-reputation-management,
 #social-media-marketing {
+  /* sets bottom margin */
   margin-bottom: 20px;
+  /* sets padding for all 4 directions */
   padding: 50px;
+  /* sets height of the block */
   height: 300px;
+  /* sets font-family */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* sets hex color code as background color and font color */
   background-color: #0072bb;
   color: #ffffff;
 }
 
-#search-engine-optimization img {
-  max-height: 200px;
-}
-
-#online-reputation-management img {
-  max-height: 200px;
-}
-
+#search-engine-optimization img,
+#online-reputation-management img,
 #social-media-marketing img {
+  /* defines the maximum height of the element */
   max-height: 200px;
 }
 
-#search-engine-optimization h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-#online-reputation-management h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
+#search-engine-optimization h2,
+#online-reputation-management h2,
 #social-media-marketing h2 {
+  /* sets bottom margin */
   margin-bottom: 20px;
+  /* sets font-size of h2 */
   font-size: 36px;
 }
 
 .footer {
+  /* sets padding for all 4 directions */
   padding: 30px;
+  /* clears left & right floats */
   clear: both;
+  /* sets font-family */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  /* aligns the content of the element to the center */
   text-align: center;
 }
 
 .footer h2 {
+  /* sets font-size */
   font-size: 20px;
 }
